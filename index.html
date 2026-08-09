@@ -1342,7 +1342,52 @@
       .section-subtitle { text-align: left; }
     }
   
-    .hero-right > div[style] { flex: 1 !important; }</style>
+    .hero-right > div[style] { flex: 1 !important; }
+    /* ─── HOW IT WORKS - 2-col layout ───────────────────── */
+    .hiw-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .steps-vertical {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .step-v {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .step-v .step-num {
+      margin-bottom: 0;
+      flex-shrink: 0;
+    }
+
+    .hiw-video .video-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16/9;
+      overflow: hidden;
+      border: 1px solid rgba(138,148,109,0.3);
+      background: var(--charcoal);
+    }
+
+    .hiw-video .video-frame iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
+    @media (max-width: 1100px) {
+      .hiw-layout { grid-template-columns: 1fr; }
+    }
+</style>
 <style>
   .section-subtitle { max-width: 540px;  text-align: left; }
   .platform-card { width: 100%; }
@@ -1397,14 +1442,14 @@
 
     <div class="hero-left">
       
-      <h1 class="hero-title">TRADE<br><em>QUALITY.</em><br>DIY<br>CONFIDENCE.</h1>
-      <p class="hero-tagline">Systems · Cut Panels · Hardware</p>
+      <h1 class="hero-title">CUSTOM CABINETS.<br><em>BUILT TO FIT.</em><br>QUOTED INSTANTLY.</h1>
+      <p class="hero-tagline">DELIVERED FAST</p>
       <p class="hero-body">
-        Cooper Supply Co. provides trade quality cabinetry systems, cut-to-size panels and premium hardware. We make it simple for builders to create exceptional spaces with confidence.
+        Whether you're a builder, cabinet maker, or experienced DIY enthusiast — Cooper Supply Co. makes ordering custom cabinetry easy. Free online ordering, instant quotes, and fast turnaround times. Sign up today!
       </p>
       <div class="hero-actions">
-        <a href="https://coopersupplyco.cabinetry.online/v2/login" class="btn-primary">Order Now — 24/7</a>
-        <a href="#products" class="btn-secondary">View Products</a>
+        <a href="https://coopersupplyco.cabinetry.online/v2/register" class="btn-primary">Create Your FREE Account</a>
+        <a href="https://coopersupplyco.cabinetry.online/v2/login" class="btn-secondary">Already a member? Log in</a>
       </div>
     </div>
 
@@ -1498,37 +1543,72 @@
       </div></div>
 
     
-  </section><section class="how-it-works" id="how-it-works">
+  </section><section class="how-it-works" id="how">
+
     <div class="section-header fade-up">
       <div>
-        <div class="section-label">How It Works</div>
-        <h2 class="section-title">FROM QUOTE<br>TO DISPATCH.</h2>
-      <p class="section-subtitle">A seamless process from your first measurement to the moment your cabinetry lands on site.</p></div>
-      
+        <div class="section-label">Simple Process</div>
+        <h2 class="section-title">SEE HOW<br>EASY IT IS.</h2>
+        <p class="section-subtitle">Watch the short video and see how you can save time, money, and stress on your next cabinetry order.</p>
+      </div>
     </div>
 
-    <div class="steps">
-      <div class="step fade-up">
-        <div class="step-num"><span>01</span></div>
-        <div class="step-title">Design &amp; Quote</div>
-        <p class="step-desc">Order online 24/7 — any time, any device. Price your systems, panels and hardware and lock in your order in minutes.</p>
+    <div class="hiw-layout">
+      <div class="steps-vertical fade-up">
+
+        <div class="step-v">
+          <div class="step-num"><span>01</span></div>
+          <div>
+            <div class="step-title">Sign Up (Free)</div>
+            <p class="step-desc">Create a free account and connect with Cooper Supply Co. to start ordering custom cabinetry online.</p>
+          </div>
+        </div>
+
+        <div class="step-v">
+          <div class="step-num"><span>02</span></div>
+          <div>
+            <div class="step-title">Start Your Project</div>
+            <p class="step-desc">Input cabinet types, dimensions, and material preferences directly in the online portal.</p>
+          </div>
+        </div>
+
+        <div class="step-v">
+          <div class="step-num"><span>03</span></div>
+          <div>
+            <div class="step-title">Get Instant Pricing</div>
+            <p class="step-desc">Quotes update in real-time. No spreadsheets. No waiting. No back-and-forth.</p>
+          </div>
+        </div>
+
+        <div class="step-v">
+          <div class="step-num"><span>04</span></div>
+          <div>
+            <div class="step-title">Place Your Order</div>
+            <p class="step-desc">Submit straight to manufacturing — no retyping, no errors, no delays.</p>
+          </div>
+        </div>
+
+        <div class="step-v">
+          <div class="step-num"><span>05</span></div>
+          <div>
+            <div class="step-title">Track &amp; Receive</div>
+            <p class="step-desc">Follow your order's progress through cutting, edging, packing, and delivery.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:16px;">
+          <a href="https://coopersupplyco.cabinetry.online/v2/register" class="btn-primary" style="display:inline-block;">Create Your FREE Account</a>
+        </div>
+
       </div>
-      <div class="step fade-up fade-up-delay-1">
-        <div class="step-num"><span>02</span></div>
-        <div class="step-title">Confirm &amp; Pay</div>
-        <p class="step-desc">Lock in your quote with a deposit. Your job enters our production system and gets a CSC job reference.</p>
-      </div>
-      <div class="step fade-up fade-up-delay-2">
-        <div class="step-num"><span>03</span></div>
-        <div class="step-title">Cut &amp; Build</div>
-        <p class="step-desc">Our factory team cuts, machines and assembles your order. Real-time status tracking keeps you informed.</p>
-      </div>
-      <div class="step fade-up fade-up-delay-3">
-        <div class="step-num"><span>04</span></div>
-        <div class="step-title">QC &amp; Dispatch</div>
-        <p class="step-desc">Every order passes quality control before pick-up. Labelled, packed and ready to assemble and install on site.</p>
+
+      <div class="hiw-video fade-up fade-up-delay-1">
+        <div class="video-frame">
+          <iframe src="https://drive.google.com/file/d/1OTf3HQqWBcRN40KMSs_S-0ewOHvgd6Mq/preview" allow="autoplay" allowfullscreen title="Cooper Supply Co. Client Portal Overview"></iframe>
+        </div>
       </div>
     </div>
+
   </section><section class="sub-brands" id="products" style="padding-top: 60px;">
     <div class="section-header fade-up">
       <div>
