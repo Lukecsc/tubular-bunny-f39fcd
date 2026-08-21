@@ -10,7 +10,1798 @@
     :root {
       --deep-olive:  #4A4728;
       --charcoal:    #1E1E1E;
-      --stone:       #D7D7D2;
+      --stone:       #D7D7D2;<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cooper Supply Co. — Trade Quality. DIY Confidence.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Montserrat:wght@600;700;800&amp;family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet">
+<style>
+:root {
+--deep-olive: #2E3D2B;
+--charcoal: #2E3D2B;
+--stone: #D7D7D2;
+--sand: #F2F2EC;
+--brass: #8A946D;
+--white: #FFFFFF;
+--text-dark: #1E1E1E;
+--text-mid: #4a4a4a;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+font-family: 'Inter', sans-serif;
+background: var(--sand);
+color: var(--text-dark);
+overflow-x: hidden;
+}
+
+/* ─── HEADER ─────────────────────────────────────── */
+header {
+position: fixed;
+top: 0; left: 0; right: 0;
+z-index: 100;
+transform: translateZ(0);
+isolation: isolate;
+background: var(--charcoal);
+border-bottom: 1px solid rgba(138,148,109,0.3);
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 48px;
+height: 68px;
+}
+
+.logo-wrap {
+display: flex;
+align-items: center;
+gap: 14px;
+text-decoration: none;
+}
+
+.logo-hex {
+width: 44px;
+height: auto;
+}
+
+.logo-text {
+display: flex;
+flex-direction: column;
+line-height: 1;
+}
+
+.logo-text span:first-child {
+font-family: 'Bebas Neue', sans-serif;
+font-size: 18px;
+letter-spacing: 0.12em;
+color: var(--white);
+}
+
+.logo-text span:last-child {
+font-family: 'Inter', sans-serif;
+font-size: 9px;
+letter-spacing: 0.25em;
+color: var(--brass);
+text-transform: uppercase;
+margin-top: 3px;
+}
+
+nav {
+display: flex;
+align-items: center;
+gap: 36px;
+}
+
+nav a {
+font-family: 'Inter', sans-serif;
+font-size: 11px;
+font-weight: 500;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+color: var(--stone);
+text-decoration: none;
+transition: color 0.2s;
+}
+
+nav a:hover { color: var(--brass); }
+
+.nav-cta {
+background: var(--deep-olive);
+color: var(--sand) !important;
+padding: 10px 22px;
+font-size: 10px !important;
+letter-spacing: 0.18em !important;
+border: 1px solid var(--brass);
+transition: background 0.2s, color 0.2s !important;
+}
+
+.nav-cta:hover {
+background: var(--brass) !important;
+color: var(--charcoal) !important;
+}
+
+/* ─── HERO ───────────────────────────────────────── */
+.hero {
+min-height: 100vh;
+background: var(--charcoal);
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+padding-top: 68px;
+position: relative;
+overflow: hidden;
+}
+
+.hero::before {
+content: '';
+position: absolute;
+inset: 0;
+background:
+repeating-linear-gradient(
+0deg,
+transparent,
+transparent 60px,
+rgba(138,148,109,0.04) 60px,
+rgba(138,148,109,0.04) 61px
+),
+repeating-linear-gradient(
+90deg,
+transparent,
+transparent 60px,
+rgba(138,148,109,0.04) 60px,
+rgba(138,148,109,0.04) 61px
+);
+pointer-events: none;
+}
+
+.hero-bg-hex {
+position: absolute;
+right: -80px;
+top: 50%;
+transform: translateY(-50%);
+width: 620px;
+height: 620px;
+opacity: 0.04;
+}
+
+.hero-left {
+padding: 80px 64px 80px 80px;
+position: relative;
+z-index: 2;
+}
+
+.hero-eyebrow {
+font-family: 'Inter', sans-serif;
+font-size: 10px;
+font-weight: 500;
+letter-spacing: 0.3em;
+text-transform: uppercase;
+color: var(--brass);
+margin-bottom: 28px;
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.hero-eyebrow::before {
+content: '';
+width: 32px;
+height: 1px;
+background: var(--brass);
+}
+
+.hero-title {
+font-family: 'Bebas Neue', sans-serif;
+font-size: clamp(72px, 8vw, 110px);
+line-height: 0.9;
+color: var(--white);
+margin-bottom: 32px;
+letter-spacing: 0.02em;
+}
+
+.hero-title em {
+font-style: normal;
+color: var(--brass);
+}
+
+.hero-tagline {
+font-family: 'Montserrat', sans-serif;
+font-size: 12px;
+font-weight: 600;
+letter-spacing: 0.35em;
+text-transform: uppercase;
+color: var(--stone);
+margin-bottom: 40px;
+padding-left: 2px;
+}
+
+.hero-body {
+font-size: 16px;
+line-height: 1.7;
+color: rgba(215,215,210,0.7);
+max-width: 440px;
+margin-bottom: 52px;
+}
+
+.hero-actions {
+display: flex;
+gap: 16px;
+flex-wrap: wrap;
+}
+
+.btn-primary {
+background: var(--deep-olive);
+color: var(--sand);
+padding: 16px 36px;
+font-family: 'Montserrat', sans-serif;
+font-size: 11px;
+font-weight: 700;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+text-decoration: none;
+border: 1px solid var(--brass);
+transition: all 0.25s;
+display: inline-block;
+}
+
+.btn-primary:hover {
+background: var(--brass);
+color: var(--charcoal);
+border-color: var(--brass);
+}
+
+.btn-secondary {
+background: transparent;
+color: var(--stone);
+padding: 16px 36px;
+font-family: 'Montserrat', sans-serif;
+font-size: 11px;
+font-weight: 700;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+text-decoration: none;
+border: 1px solid rgba(215,215,210,0.3);
+transition: all 0.25s;
+display: inline-block;
+}
+
+.btn-secondary:hover {
+border-color: var(--stone);
+color: var(--white);
+}
+
+.hero-right {
+position: relative;
+z-index: 2;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 80px 80px 80px 0;
+}
+
+.hero-card {
+background: rgba(46,61,43,0.25);
+border: 1px solid rgba(138,148,109,0.25);
+padding: 48px;
+width: 100%;
+max-width: 420px;
+backdrop-filter: blur(8px);
+position: relative;
+}
+
+.hero-card::before {
+content: '';
+position: absolute;
+top: -1px; left: 40px;
+width: 60px; height: 2px;
+background: var(--brass);
+}
+
+.hero-card-label {
+font-size: 9px;
+font-weight: 500;
+letter-spacing: 0.3em;
+text-transform: uppercase;
+color: var(--brass);
+margin-bottom: 20px;
+}
+
+.hero-card-title {
+font-family: 'Bebas Neue', sans-serif;
+font-size: 32px;
+letter-spacing: 0.05em;
+color: var(--white);
+margin-bottom: 16px;
+}
+
+.hero-card-body {
+font-size: 14px;
+line-height: 1.65;
+color: rgba(215,215,210,0.65);
+margin-bottom: 28px;
+}
+
+.hero-stat-row {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 16px;
+margin-bottom: 28px;
+}
+
+.hero-stat {
+border-left: 2px solid var(--deep-olive);
+padding-left: 12px;
+}
+
+.hero-stat-num {
+font-family: 'Bebas Neue', sans-serif;
+font-size: 28px;
+color: var(--brass);
+line-height: 1;
+}
+
+.hero-stat-label {
+font-size: 10px;
+letter-spacing: 0.1em;
+color: var(--stone);
+margin-top: 2px;
+}
+
+.hero-card-link {
+font-size: 11px;
+font-weight: 600;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: var(--sand);
+text-decoration: none;
+display: flex;
+align-items: center;
+gap: 10px;
+transition: gap 0.2s;
+}
+
+.hero-card-link:hover { gap: 16px; color: var(--brass); }
+.hero-card-link::after { content: '→'; }
+
+/* ─── TICKER ─────────────────────────────────────── */
+.ticker {
+background: #FFFFFF;
+padding: 14px 0;
+overflow: hidden;
+white-space: nowrap;
+border-top: 1px solid rgba(138,148,109,0.3);
+border-bottom: 1px solid rgba(138,148,109,0.3);
+color: #2E3D2B;}
+
+.ticker-inner {
+display: inline-flex;
+animation: ticker 30s linear infinite;
+gap: 0;
+}
+
+.ticker-item {
+font-family: 'Montserrat', sans-serif;
+font-size: 10px;
+font-weight: 700;
+letter-spacing: 0.3em;
+text-transform: uppercase;
+
+padding: 0 48px;
+display: flex;
+align-items: center;
+gap: 16px;
+color: #2E3D2B;}
+
+.ticker-item::after {
+content: '◆';
+font-size: 6px;
+color: var(--brass);
+}
+
+@keyframes ticker {
+from { transform: translateX(0); }
+to { transform: translateX(-50%); }
+}
+
+/* ─── PLATFORMS ──────────────────────────────────── */
+.platforms {
+padding: 120px 80px;
+background: var(--sand);
+}
+
+.section-header {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+margin-bottom: 72px;
+}
+
+.section-label {
+font-size: 10px;
+font-weight: 500;
+letter-spacing: 0.3em;
+text-transform: uppercase;
+color: var(--brass);
+margin-bottom: 12px;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.section-label::before {
+content: '';
+width: 24px;
+height: 1px;
+background: var(--brass);
+}
+
+.section-title {
+font-family: 'Bebas Neue', sans-serif;
+font-size: clamp(42px, 5vw, 68px);
+line-height: 0.95;
+color: var(--charcoal);
+letter-spacing: 0.02em;
+}
+
+.section-subtitle { max-width: 540px; text-align: left; }
+
+.platform-grid {
+display: block;
+}
+
+.platform-card {
+position: relative;
+overflow: hidden;
+background: var(--charcoal);
+min-height: 480px;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+padding: 48px;
+cursor: pointer;
+text-decoration: none;
+transition: all 0.4s;
+}
+
+.platform-card::before {
+content: '';
+position: absolute;
+inset: 0;
+background: linear-gradient(to top, rgba(30,30,30,0.95) 0%, rgba(30,30,30,0.3) 60%, transparent 100%);
+z-index: 1;
+transition: opacity 0.4s;
+}
+
+.platform-card:hover::before {
+background: linear-gradient(to top, rgba(46,61,43,0.97) 0%, rgba(46,61,43,0.6) 60%, rgba(46,61,43,0.2) 100%);
+}
+
+.platform-card-bg {
+position: absolute;
+inset: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+opacity: 0.06;
+transition: opacity 0.4s, transform 0.6s;
+}
+
+.platform-card:hover .platform-card-bg {
+opacity: 0.1;
+transform: scale(1.05);
+}
+
+.platform-card-content {
+position: relative;
+z-index: 2;
+}
+
+.platform-tag {
+display: inline-block;
+font-size: 9px;
+font-weight: 500;
+letter-spacing: 0.25em;
+text-transform: uppercase;
+color: var(--brass);
+border: 1px solid var(--brass);
+padding: 4px 10px;
+margin-bottom: 16px;
+}
+
+.platform-name {
+font-family: 'Bebas Neue', sans-serif;
+font-size: 48px;
+letter-spacing: 0.03em;
+color: var(--white);
+line-height: 0.95;
+margin-bottom: 16px;
+}
+
+.platform-desc {
+font-size: 14px;
+line-height: 1.65;
+color: rgba(215,215,210,0.7);
+margin-bottom: 28px;
+max-width: 380px;
+}
+
+.platform-features {
+display: flex;
+gap: 20px;
+flex-wrap: wrap;
+margin-bottom: 32px;
+}
+
+.platform-feature {
+font-size: 10px;
+font-weight: 500;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+color: var(--stone);
+display: flex;
+align-items: center;
+gap: 6px;
+}
+
+.platform-feature::before {
+content: '';
+width: 4px; height: 4px;
+background: var(--brass);
+border-radius: 50%;
+}
+
+.platform-cta {
+display: inline-flex;
+align-items: center;
+gap: 12px;
+font-family: 'Montserrat', sans-serif;
+font-size: 11px;
+font-weight: 700;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: var(--sand);
+text-decoration: none;
+border-bottom: 1px solid rgba(242,242,236,0.3);
+padding-bottom: 4px;
+transition: all 0.25s;
+}
+
+.platform-cta:hover {
+color: var(--brass);
+border-color: var(--brass);
+gap: 18px;
+}
+
+/* ─── SUB-BRANDS ─────────────────────────────────── */
+.sub-brands {
+background: var(--charcoal);
+padding: 120px 80px;
+}
+
+.sub-brands .section-title { color: var(--white); }
+.sub-brands .section-subtitle { color: rgba(215,215,210,0.6); }
+
+.brand-cards {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2px;
+margin-top: 72px;
+}
+
+.brand-card {
+background: rgba(46,61,43,0.15);
+border: 1px solid rgba(138,148,109,0.15);
+padding: 48px 40px;
+position: relative;
+transition: all 0.3s;
+overflow: hidden;
+}
+
+.brand-card::after {
+content: '';
+position: absolute;
+bottom: 0; left: 0; right: 0;
+height: 2px;
+background: var(--deep-olive);
+transform: scaleX(0);
+transition: transform 0.3s;
+transform-origin: left;
+}
+
+.brand-card:hover {
+background: rgba(46,61,43,0.3);
+border-color: rgba(138,148,109,0.35);
+}
+
+.brand-card:hover::after { transform: scaleX(1); }
+
+.brand-card-num {
+font-family: 'Bebas Neue', sans-serif;
+font-size: 80px;
+line-height: 1;
+color: rgba(138,148,109,0.12);
+position: absolute;
+top: 20px; right: 30px;
+letter-spacing: -0.02em;
+}
+
+.brand-card-icon {
+width: 48px;
+height: 48px;
+margin-bottom: 28px;
+}
+
+.brand-card-name {
+font-family: 'Bebas Neue', sans-serif;
+font-size: 32px;
+letter-spacing: 0.05em;
+color: var(--white);
+margin-bottom: 8px;
+}
+
+.brand-card-sub {
+font-size: 10px;
+font-weight: 500;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: var(--brass);
+margin-bottom: 20px;
+}
+
+.brand-card-desc {
+font-size: 14px;
+line-height: 1.65;
+color: rgba(215,215,210,0.55);
+margin-bottom: 32px;
+}
+
+.brand-card-items {
+list-style: none;
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+
+.brand-card-items li {
+font-size: 12px;
+color: rgba(215,215,210,0.5);
+padding-left: 14px;
+position: relative;
+letter-spacing: 0.05em;
+}
+
+.brand-card-items li::before {
+content: '—';
+position: absolute;
+left: 0;
+color: var(--brass);
+font-size: 10px;
+}
+
+/* ─── HOW IT WORKS ───────────────────────────────── */
+.how-it-works {
+padding: 120px 80px;
+background: var(--sand);
+}
+
+.steps {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 2px;
+margin-top: 72px;
+position: relative;
+}
+
+.steps::before {
+content: '';
+position: absolute;
+top: 32px;
+left: 10%;
+right: 10%;
+height: 1px;
+background: linear-gradient(to right, transparent, var(--stone) 20%, var(--stone) 80%, transparent);
+z-index: 0;
+}
+
+.step {
+padding: 0 32px 48px;
+position: relative;
+z-index: 1;
+}
+
+.step-num {
+width: 64px;
+height: 64px;
+background: var(--deep-olive);
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 28px;
+position: relative;
+}
+
+.step-num span {
+font-family: 'Bebas Neue', sans-serif;
+font-size: 24px;
+color: var(--sand);
+letter-spacing: 0.05em;
+}
+
+.step-title {
+font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+font-weight: 700;
+color: var(--charcoal);
+margin-bottom: 12px;
+letter-spacing: 0.02em;
+}
+
+.step-desc {
+font-size: 14px;
+line-height: 1.65;
+color: var(--text-mid);
+}
+
+/* ─── 24/7 ORDER CTA ────────────────────────────── */
+.cabinetry-cta {
+background: var(--deep-olive);
+padding: 120px 80px;
+display: block;
+position: relative;
+overflow: hidden;
+}
+
+.cabinetry-cta::before {
+content: '';
+position: absolute;
+inset: 0;
+background:
+repeating-linear-gradient(
+-45deg,
+transparent,
+transparent 40px,
+rgba(138,148,109,0.04) 40px,
+rgba(138,148,109,0.04) 41px
+);
+pointer-events: none;
+}
+
+.cabinetry-cta .section-title { color: var(--sand); }
+
+.cta-body {
+font-size: 16px;
+line-height: 1.75;
+color: rgba(242,242,236,0.65);
+margin: 24px 0 40px;
+}
+
+.cabinetry-badge {
+display: flex;
+align-items: center;
+gap: 28px;
+background: rgba(0,0,0,0.2);
+border: 1px solid rgba(138,148,109,0.3);
+padding: 22px 40px;
+margin-bottom: 20px;
+width: 100%;
+box-sizing: border-box;
+}
+
+.cabinetry-badge-icon {
+width: 44px;
+height: 44px;
+background: rgba(138,148,109,0.2);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-shrink: 0;
+}
+
+.cabinetry-badge-text strong {
+display: block;
+font-family: 'Montserrat', sans-serif;
+font-size: 13px;
+font-weight: 700;
+color: var(--sand);
+letter-spacing: 0.05em;
+}
+
+.cabinetry-badge-text span {
+font-size: 12px;
+color: rgba(242,242,236,0.55);
+}
+
+.cta-right {
+position: relative;
+z-index: 2;
+}
+
+.cta-screen {
+background: var(--charcoal);
+border: 1px solid rgba(138,148,109,0.2);
+overflow: hidden;
+position: relative;
+}
+
+.cta-screen-bar {
+background: rgba(138,148,109,0.1);
+padding: 10px 16px;
+display: flex;
+align-items: center;
+gap: 6px;
+border-bottom: 1px solid rgba(138,148,109,0.15);
+}
+
+.cta-screen-dot {
+width: 8px; height: 8px; border-radius: 50%;
+}
+
+.cta-screen-url {
+margin-left: 8px;
+font-size: 10px;
+color: rgba(215,215,210,0.4);
+font-family: monospace;
+letter-spacing: 0.05em;
+}
+
+.cta-screen-body {
+padding: 32px;
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+
+.cta-screen-logo {
+display: flex;
+align-items: center;
+gap: 10px;
+margin-bottom: 8px;
+}
+
+.cta-screen-logo-circle {
+width: 32px; height: 32px;
+border-radius: 50%;
+background: linear-gradient(135deg, #4AABF5, #F5A623, #4AE5A3);
+}
+
+.cta-screen-logo-text {
+font-family: 'Bebas Neue', sans-serif;
+font-size: 20px;
+letter-spacing: 0.05em;
+color: var(--white);
+}
+
+.cta-screen-logo-dot {
+color: var(--brass);
+}
+
+.screen-field {
+background: rgba(255,255,255,0.05);
+border: 1px solid rgba(138,148,109,0.15);
+padding: 10px 14px;
+font-size: 12px;
+color: rgba(215,215,210,0.4);
+}
+
+.screen-btn {
+background: #3B9EF5;
+color: white;
+padding: 12px;
+text-align: center;
+font-size: 12px;
+font-weight: 600;
+letter-spacing: 0.1em;
+margin-top: 4px;
+}
+
+/* ─── OPERATIONS PLATFORM ────────────────────────── */
+.ops-platform {
+padding: 120px 80px;
+background: var(--charcoal);
+position: relative;
+overflow: hidden;
+}
+
+.ops-platform .section-title { color: var(--white); }
+.ops-platform .section-subtitle { color: rgba(215,215,210,0.6); }
+
+.ops-grid {
+display: grid;
+grid-template-columns: 1fr 1.2fr;
+gap: 80px;
+align-items: start;
+margin-top: 72px;
+}
+
+.ops-features {
+display: flex;
+flex-direction: column;
+gap: 2px;
+}
+
+.ops-feature {
+border: 1px solid rgba(138,148,109,0.15);
+padding: 28px 32px;
+display: flex;
+gap: 20px;
+align-items: flex-start;
+transition: all 0.3s;
+cursor: default;
+}
+
+.ops-feature:hover {
+background: rgba(46,61,43,0.25);
+border-color: rgba(138,148,109,0.35);
+}
+
+.ops-feature-icon {
+width: 40px;
+height: 40px;
+background: rgba(46,61,43,0.4);
+border: 1px solid rgba(138,148,109,0.2);
+display: flex;
+align-items: center;
+justify-content: center;
+flex-shrink: 0;
+}
+
+.ops-feature-text strong {
+display: block;
+font-family: 'Montserrat', sans-serif;
+font-size: 13px;
+font-weight: 700;
+color: var(--stone);
+letter-spacing: 0.05em;
+margin-bottom: 6px;
+}
+
+.ops-feature-text span {
+font-size: 13px;
+line-height: 1.6;
+color: rgba(215,215,210,0.45);
+}
+
+.ops-dashboard {
+background: rgba(255,255,255,0.03);
+border: 1px solid rgba(138,148,109,0.2);
+overflow: hidden;
+}
+
+.ops-dash-header {
+background: rgba(0,0,0,0.3);
+padding: 12px 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+border-bottom: 1px solid rgba(138,148,109,0.12);
+}
+
+.ops-dash-title {
+font-family: 'Bebas Neue', sans-serif;
+font-size: 14px;
+letter-spacing: 0.15em;
+color: var(--stone);
+}
+
+.ops-dash-badge {
+font-size: 9px;
+letter-spacing: 0.15em;
+color: var(--brass);
+border: 1px solid var(--brass);
+padding: 2px 8px;
+}
+
+.ops-dash-stats {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 1px;
+background: rgba(138,148,109,0.1);
+}
+
+.ops-dash-stat {
+background: rgba(30,30,30,0.9);
+padding: 20px;
+text-align: center;
+}
+
+.ops-dash-stat-num {
+font-family: 'Bebas Neue', sans-serif;
+font-size: 36px;
+line-height: 1;
+color: var(--brass);
+}
+
+.ops-dash-stat-label {
+font-size: 9px;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+color: rgba(215,215,210,0.4);
+margin-top: 4px;
+}
+
+.ops-dash-jobs {
+padding: 16px;
+display: flex;
+flex-direction: column;
+gap: 6px;
+}
+
+.ops-dash-job {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px 14px;
+background: rgba(255,255,255,0.03);
+border: 1px solid rgba(138,148,109,0.08);
+}
+
+.ops-dash-job-ref {
+font-size: 10px;
+letter-spacing: 0.1em;
+color: var(--brass);
+font-family: monospace;
+}
+
+.ops-dash-job-name {
+font-size: 12px;
+color: var(--stone);
+}
+
+.ops-dash-job-status {
+font-size: 9px;
+letter-spacing: 0.1em;
+padding: 3px 8px;
+}
+
+.status-production { background: rgba(46,61,43,0.6); color: #8BC48A; border: 1px solid rgba(139,196,138,0.3); }
+.status-dispatch { background: rgba(138,148,109,0.15); color: var(--brass); border: 1px solid rgba(138,148,109,0.3); }
+.status-quote { background: rgba(30,30,30,0.6); color: var(--stone); border: 1px solid rgba(215,215,210,0.2); }
+
+.ops-cta-row {
+padding: 20px;
+border-top: 1px solid rgba(138,148,109,0.12);
+display: flex;
+gap: 12px;
+}
+
+/* ─── VALUES ─────────────────────────────────────── */
+.values {
+padding: 120px 80px;
+background: var(--sand);
+}
+
+.values-grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 2px;
+margin-top: 72px;
+}
+
+.value-card {
+padding: 48px 36px;
+background: var(--white);
+border: 1px solid rgba(46,61,43,0.08);
+transition: all 0.3s;
+}
+
+.value-card:hover {
+background: var(--charcoal);
+}
+
+.value-card:hover .value-title { color: var(--white); }
+.value-card:hover .value-desc { color: rgba(215,215,210,0.6); }
+.value-card:hover .value-num { color: rgba(138,148,109,0.2); }
+
+.value-num {
+font-family: 'Bebas Neue', sans-serif;
+font-size: 56px;
+line-height: 1;
+color: rgba(46,61,43,0.08);
+margin-bottom: 20px;
+transition: color 0.3s;
+}
+
+.value-icon {
+width: 36px; height: 36px;
+margin-bottom: 20px;
+}
+
+.value-title {
+font-family: 'Montserrat', sans-serif;
+font-size: 15px;
+font-weight: 700;
+color: var(--charcoal);
+letter-spacing: 0.05em;
+margin-bottom: 12px;
+transition: color 0.3s;
+}
+
+.value-desc {
+font-size: 13px;
+line-height: 1.65;
+color: var(--text-mid);
+transition: color 0.3s;
+}
+
+/* ─── CONTACT ────────────────────────────────────── */
+.contact {
+background: var(--charcoal);
+padding: 120px 80px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 100px;
+align-items: start;
+}
+
+.contact .section-title { color: var(--white); }
+
+.contact-body {
+font-size: 16px;
+line-height: 1.75;
+color: rgba(215,215,210,0.6);
+margin: 24px 0 48px;
+}
+
+.contact-details {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.contact-detail {
+display: flex;
+align-items: center;
+gap: 16px;
+}
+
+.contact-detail-icon {
+width: 40px; height: 40px;
+background: rgba(46,61,43,0.4);
+border: 1px solid rgba(138,148,109,0.2);
+display: flex;
+align-items: center;
+justify-content: center;
+flex-shrink: 0;
+}
+
+.contact-detail-text strong {
+display: block;
+font-size: 11px;
+font-weight: 500;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+color: var(--brass);
+margin-bottom: 2px;
+}
+
+.contact-detail-text span {
+font-size: 14px;
+color: var(--stone);
+}
+
+.contact-form {
+display: flex;
+flex-direction: column;
+gap: 16px;
+}
+
+.form-row {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 16px;
+}
+
+.form-field {
+display: flex;
+flex-direction: column;
+gap: 6px;
+}
+
+.form-field label {
+font-size: 9px;
+font-weight: 500;
+letter-spacing: 0.25em;
+text-transform: uppercase;
+color: var(--brass);
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+background: rgba(255,255,255,0.04);
+border: 1px solid rgba(138,148,109,0.2);
+padding: 12px 16px;
+font-family: 'Inter', sans-serif;
+font-size: 14px;
+color: var(--stone);
+outline: none;
+transition: border-color 0.2s;
+width: 100%;
+appearance: none;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+border-color: var(--brass);
+}
+
+.form-field textarea { resize: vertical; min-height: 100px; }
+
+.form-field select option { background: var(--charcoal); }
+
+/* ─── FOOTER ─────────────────────────────────────── */
+footer {
+background: #111;
+padding: 64px 80px 40px;
+border-top: 1px solid rgba(138,148,109,0.15);
+}
+
+.footer-top {
+display: grid;
+grid-template-columns: 1.5fr 1fr 1fr 1fr;
+gap: 60px;
+padding-bottom: 60px;
+border-bottom: 1px solid rgba(138,148,109,0.1);
+margin-bottom: 40px;
+}
+
+.footer-brand p {
+font-size: 13px;
+line-height: 1.65;
+color: rgba(215,215,210,0.4);
+margin-top: 20px;
+max-width: 280px;
+}
+
+.footer-col-title {
+font-family: 'Montserrat', sans-serif;
+font-size: 10px;
+font-weight: 700;
+letter-spacing: 0.25em;
+text-transform: uppercase;
+color: var(--brass);
+margin-bottom: 20px;
+}
+
+.footer-links {
+list-style: none;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.footer-links a {
+font-size: 13px;
+color: rgba(215,215,210,0.45);
+text-decoration: none;
+transition: color 0.2s;
+}
+
+.footer-links a:hover { color: var(--stone); }
+
+.footer-bottom {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.footer-copy {
+font-size: 11px;
+color: rgba(215,215,210,0.25);
+letter-spacing: 0.05em;
+}
+
+.footer-legal {
+display: flex;
+gap: 24px;
+}
+
+.footer-legal a {
+font-size: 11px;
+color: rgba(215,215,210,0.25);
+text-decoration: none;
+letter-spacing: 0.05em;
+}
+
+.footer-legal a:hover { color: var(--stone); }
+
+/* ─── ANIMATIONS ─────────────────────────────────── */
+.fade-up {
+opacity: 0;
+transform: translateY(32px);
+transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-up.visible {
+opacity: 1;
+transform: translateY(0);
+}
+
+.fade-up-delay-1 { transition-delay: 0.1s; }
+.fade-up-delay-2 { transition-delay: 0.2s; }
+.fade-up-delay-3 { transition-delay: 0.3s; }
+.fade-up-delay-4 { transition-delay: 0.4s; }
+
+/* ─── RESPONSIVE ─────────────────────────────────── */
+@media (max-width: 1100px) {
+.hero { grid-template-columns: 1fr; }
+.hero-right { display: none; }
+.platform-grid { grid-template-columns: 1fr; }
+.brand-cards { grid-template-columns: 1fr; }
+.ops-grid { grid-template-columns: 1fr; }
+.contact { grid-template-columns: 1fr; }
+.footer-top { grid-template-columns: 1fr 1fr; }
+.values-grid { grid-template-columns: 1fr 1fr; }
+.steps { grid-template-columns: 1fr 1fr; }
+.cabinetry-cta { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+header { padding: 0 24px; }
+nav { display: none; }
+.hero-left, .platforms, .sub-brands,
+.how-it-works, .cabinetry-cta, .ops-platform,
+.values, .contact, footer { padding-left: 24px; padding-right: 24px; }
+.values-grid { grid-template-columns: 1fr; }
+.steps { grid-template-columns: 1fr; }
+.form-row { grid-template-columns: 1fr; }
+.section-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+.section-subtitle { text-align: left; }
+}
+
+.hero-right > div[style] { flex: 1 !important; }</style>
+<style>
+.section-subtitle { max-width: 540px; text-align: left; }
+.platform-card { width: 100%; }
+
+.hero-right > div[style] { flex: 1 !important; width: 100% !important; align-self: stretch; box-sizing: border-box; }
+.platforms { padding-top: 80px !important; padding-bottom: 60px !important; }
+
+.platform-card { position: relative; }
+.platform-card-bg { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+.platform-card-content { position: relative; z-index: 1; width: 100% !important; max-width: none !important; box-sizing: border-box; padding: 48px 72px !important; }
+.platform-features { display: flex; flex-wrap: wrap; gap: 12px 32px; margin-top: 8px; }
+.sub-brands { padding-top: 60px !important; }
+
+/* Reduce section-header bottom gap — 72px is too loose */
+.section-header { margin-bottom: 52px !important; }
+/* Values section — slightly less top breathing room */
+.values { padding-top: 80px !important; }
+/* Contact section — tighten top */
+.contact { padding-top: 80px !important; }
+/* Always-open CTA: centre the big heading block */
+.cabinetry-cta > div { margin: 0; }
+.how-it-works { padding: 80px !important; }
+.platform-card { display:flex !important; flex-direction:column !important; min-height:0 !important; }
+.platform-card-bg { position:absolute !important; inset:0 !important; z-index:0 !important; pointer-events:none !important; }
+.platform-card-content { position:relative !important; z-index:1 !important; flex:1 !important; }</style><!-- deploy-bust --></head>
+<body>
+
+<!-- HEADER -->
+<header>
+<a class="logo-wrap" href="/">
+<svg class="logo-hex" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 202 178"><path fill="#4A4728" fill-rule="evenodd" d="M101,12L167,51L167,127L101,166L35,127L35,51ZM101,28L154,58L154,120L101,150L48,120L48,58Z"/><rect fill="#4A4728" x="75" y="56" width="52" height="13"/><rect fill="#4A4728" x="75" y="69" width="13" height="14"/><rect fill="#4A4728" x="75" y="83" width="52" height="13"/><rect fill="#4A4728" x="114" y="96" width="13" height="14"/><rect fill="#4A4728" x="75" y="110" width="52" height="13"/></svg>
+<div class="logo-text">
+<span>COOPER SUPPLY CO.</span>
+<span>Trade Quality. DIY Confidence.</span>
+</div>
+</a>
+<nav>
+<a href="#order">Order Online</a>
+<a href="#products">Products</a>
+<a href="#how-it-works">How It Works</a>
+<a href="#contact">Contact</a>
+
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" style="overflow:hidden;">
+<svg class="hero-bg-hex" viewBox="0 0 200 230" fill="none">
+<path d="M100 10 L190 60 L190 170 L100 220 L10 170 L10 60 Z" stroke="#8A946D" stroke-width="1"></path>
+<path d="M100 30 L170 72 L170 158 L100 200 L30 158 L30 72 Z" stroke="#8A946D" stroke-width="0.5"></path>
+</svg>
+
+<div class="hero-left">
+
+<h1 class="hero-title">TRADE<br><em>QUALITY.</em><br>DIY<br>CONFIDENCE.</h1>
+<p class="hero-tagline">Systems · Cut Panels · Hardware</p>
+<p class="hero-body">
+Cooper Supply Co. provides trade quality cabinetry systems, cut-to-size panels and premium hardware. We make it simple for builders to create exceptional spaces with confidence.
+</p>
+<div class="hero-actions">
+<a href="https://coopersupplyco.cabinetry.online/v2/login" class="btn-primary">Order Now — 24/7</a>
+<a href="#products" class="btn-secondary">View Products</a>
+</div>
+</div>
+
+<div class="hero-right" style="display: flex; flex-direction: column; justify-content: space-evenly; padding: 80px 80px 80px 40px; z-index: 2; position: relative;">
+<div style="width:100%;max-width:680px;max-height:600px;aspect-ratio:9/16;background:#1a1f1a;border-radius:4px;overflow:hidden;">
+<video autoplay loop muted playsinline style="width:100%;height:100%;object-fit:cover;display:block;">
+<source src="/portal-preview.mp4" type="video/mp4">
+</video>
+</div></div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+<div class="ticker-inner">
+<span class="ticker-item">CSC Systems</span>
+<span class="ticker-item">Cut-to-Size Panels</span>
+<span class="ticker-item">Any Hardware</span>
+<span class="ticker-item">Trade Rates</span>
+<span class="ticker-item">Trade Quality</span>
+<span class="ticker-item">DIY Confidence</span>
+<span class="ticker-item">Laundry Systems</span>
+<span class="ticker-item">Wardrobe Systems</span>
+<span class="ticker-item">Vanity Systems</span>
+<span class="ticker-item">CNC Services</span>
+<span class="ticker-item">CSC Systems</span>
+<span class="ticker-item">Cut-to-Size Panels</span>
+<span class="ticker-item">Any Hardware</span>
+<span class="ticker-item">Trade Rates</span>
+<span class="ticker-item">Trade Quality</span>
+<span class="ticker-item">DIY Confidence</span>
+<span class="ticker-item">Laundry Systems</span>
+<span class="ticker-item">Wardrobe Systems</span>
+<span class="ticker-item">Vanity Systems</span>
+<span class="ticker-item">CNC Services</span>
+</div>
+</div>
+<!-- DIFFERENTIATORS -->
+<section style="background:var(--deep-olive);padding:90px 80px;position:relative;overflow:hidden;">
+<div style="position:absolute;inset:0;background:repeating-linear-gradient(-45deg,transparent,transparent 40px,rgba(138,148,109,0.04) 40px,rgba(138,148,109,0.04) 41px);pointer-events:none;"></div>
+<div style="position:relative;z-index:1;">
+
+<div style="margin-bottom:56px;">
+<div style="font-size:10px;font-weight:500;letter-spacing:0.3em;text-transform:uppercase;color:rgba(242,242,236,0.6);margin-bottom:12px;display:flex;align-items:center;gap:10px;"><span style="display:inline-block;width:24px;height:1px;background:rgba(242,242,236,0.4);"></span>Why Cooper Supply Co.</div>
+<h2 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(42px,5vw,68px);line-height:0.95;color:var(--sand);letter-spacing:0.02em;">CUSTOM CABINETRY SYSTEMS,<br>WITHOUT THE COMPROMISE.</h2>
+</div>
+
+<div style="overflow-x:auto;">
+<table style="width:100%;border-collapse:collapse;min-width:560px;">
+<thead>
+<tr>
+<th style="text-align:left;padding:16px 20px;font-family:'Inter',sans-serif;font-size:11px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:rgba(242,242,236,0.5);border-bottom:1px solid rgba(242,242,236,0.15);width:34%;"></th>
+<th style="text-align:center;padding:16px 20px;font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:0.05em;color:var(--sand);border-bottom:2px solid rgba(242,242,236,0.5);background:rgba(0,0,0,0.15);border-radius:2px 2px 0 0;">Cooper Supply Co.</th>
+<th style="text-align:center;padding:16px 20px;font-family:'Inter',sans-serif;font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:rgba(242,242,236,0.45);border-bottom:1px solid rgba(242,242,236,0.1);">Traditional Cabinetry</th>
+<th style="text-align:center;padding:16px 20px;font-family:'Inter',sans-serif;font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:rgba(242,242,236,0.45);border-bottom:1px solid rgba(242,242,236,0.1);">Flat-Pack Systems</th>
+</tr>
+</thead>
+<tbody>
+
+<tr style="background:rgba(0,0,0,0.08);">
+<td style="padding:14px 20px;font-family:'Inter',sans-serif;font-size:13px;color:rgba(242,242,236,0.75);border-bottom:1px solid rgba(242,242,236,0.07);">Custom sizing to your dimensions</td>
+<td style="text-align:center;padding:14px 20px;border-bottom:1px solid rgba(242,242,236,0.07);background:rgba(0,0,0,0.1);font-size:18px;">✓</td>
+<td style="text-align:center;padding:14px 20px;border-bottom:1px solid rgba(242,242,236,0.07);font-size:18px;color:rgba(242,242,236,0.35);">✓</td>
+<td style="text-align:center;padding:14px 20px;border-bottom:1px solid rgba(242,242,236,0.07);font-size:18px;color:rgba(242,242,236,0.35);">✗</td>
+</tr>
+<tr style="background:transparent;">
+<td style="padding:14px 20px;font-family:'Inter',sans-serif;font-size:13px;color:rgba(242,242,236,0.75);border-bottom:1px solid rgba(242,242,236,0.07);">Order online, self-serve</td>
+<td style="text-align:center;padding:14px 20px;border-bottom:1px solid rgba(242,242,236,0.07);background:rgba(0,0,0,0.1);font-size:18px;">✓</td>
+<td style="text-align:center;padding:14px 20px;border-bottom:1px solid rgba(242,242,236,0.07);font-size:18px;color:rgba(242,242,236,0.35);">✗</td>
+<td style="text-align:center;padding:14px 20px;border-bottom:1px solid rgba(242,242,236,0.07);font-size:18px;color:rgba(242,242,236,0.35);">✓</td>
+</tr>
+<tr style="background:rgba(0,0,0,0.08);">
+<td style="padding:14px 20px;font-family:'Inter',sans-serif;font-size:13px;color:rgba(242,242,236,0.75);border-bottom:1px solid rgba(242,242,236,0.07);">Instant pricing, no callbacks</td>
+<td style="text-align:center;padding:14px 20px;border-bottom:1px solid rgba(242,242,236,0.07);background:rgba(0,0,0,0.1);font-size:18px;">✓</td>
+<td style="text-align:center;padding:14px 20px;border-bottom:1px solid rgba(242,242,236,0.07);font-size:18px;color:rgba(242,242,236,0.35);">✗</td>
+<td style="text-align:center;padding:14px 20px;border-bottom:1px solid rgba(242,242,236,0.07);font-size:18px;color:rgba(242,242,236,0.35);">✓</td>
+</tr>
+<tr style="background:transparent;">
+<td style="padding:14px 20px;font-family:'Inter',sans-serif;font-size:13px;color:rgba(242,242,236,0.75);border-bottom:1px solid rgba(242,242,236,0.07);">Fast turnaround</td>
+<td style="text-align:center;padding:14px 20px;border-bottom:1px solid rgba(242,242,236,0.07);background:rgba(0,0,0,0.1);font-size:18px;">✓</td>
+<td style="text-align:center;padding:14px 20px;border-bottom:1px solid rgba(242,242,236,0.07);font-size:18px;color:rgba(242,242,236,0.35);">✗</td>
+<td style="text-align:center;padding:14px 20px;border-bottom:1px solid rgba(242,242,236,0.07);font-size:18px;color:rgba(242,242,236,0.35);">✓</td>
+</tr>
+<tr style="background:rgba(0,0,0,0.08);">
+<td style="padding:14px 20px;font-family:'Inter',sans-serif;font-size:13px;color:rgba(242,242,236,0.75);border-bottom:1px solid rgba(242,242,236,0.07);">Trade quality materials</td>
+<td style="text-align:center;padding:14px 20px;border-bottom:1px solid rgba(242,242,236,0.07);background:rgba(0,0,0,0.1);font-size:18px;">✓</td>
+<td style="text-align:center;padding:14px 20px;border-bottom:1px solid rgba(242,242,236,0.07);font-size:18px;color:rgba(242,242,236,0.35);">✓</td>
+<td style="text-align:center;padding:14px 20px;border-bottom:1px solid rgba(242,242,236,0.07);font-size:18px;color:rgba(242,242,236,0.35);">✗</td>
+</tr>
+<tr style="background:transparent;">
+<td style="padding:14px 20px;font-family:'Inter',sans-serif;font-size:13px;color:rgba(242,242,236,0.75);border-bottom:1px solid rgba(242,242,236,0.07);">No showroom visit required</td>
+<td style="text-align:center;padding:14px 20px;border-bottom:1px solid rgba(242,242,236,0.07);background:rgba(0,0,0,0.1);font-size:18px;">✓</td>
+<td style="text-align:center;padding:14px 20px;border-bottom:1px solid rgba(242,242,236,0.07);font-size:18px;color:rgba(242,242,236,0.35);">✗</td>
+<td style="text-align:center;padding:14px 20px;border-bottom:1px solid rgba(242,242,236,0.07);font-size:18px;color:rgba(242,242,236,0.35);">✓</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div style="margin-top:40px;">
+<a href="https://coopersupplyco.cabinetry.online/v2/register" style="background:var(--sand);color:var(--deep-olive);padding:16px 36px;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;text-decoration:none;display:inline-block;">Create Your FREE Account</a>
+</div>
+
+</div>
+</section>
+
+<!-- ORDERING PORTAL + FULL PROCESS -->
+<section style="background:var(--charcoal);padding:80px 80px 100px;border-top:1px solid rgba(138,148,109,0.15);border-bottom:1px solid rgba(138,148,109,0.15);" id="get-started">
+
+<div style="margin-bottom:56px;">
+<div style="font-size:10px;font-weight:500;letter-spacing:0.3em;text-transform:uppercase;color:var(--brass);margin-bottom:12px;display:flex;align-items:center;gap:10px;"><span style="display:inline-block;width:24px;height:1px;background:var(--brass);"></span>Online Ordering Portal</div>
+<h2 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(42px,5vw,68px);line-height:0.95;color:var(--white);letter-spacing:0.02em;margin-bottom:16px;">ORDER CUSTOM CABINETRY<br><span style="color:var(--brass);">ONLINE, 24/7</span></h2>
+<p style="font-size:16px;color:rgba(215,215,210,0.65);max-width:600px;line-height:1.7;">Whether you're a builder, cabinet maker, or DIY enthusiast — sign up free and get instant quotes any time. Watch the short video to see how easy it is.</p>
+</div>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;">
+
+<div style="display:flex;flex-direction:column;gap:28px;">
+
+<div style="display:flex;gap:20px;align-items:flex-start;">
+<div style="width:56px;height:56px;background:var(--deep-olive);border:1px solid rgba(138,148,109,0.25);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span style="font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--sand);">01</span></div>
+<div><div style="font-family:'Montserrat',sans-serif;font-size:13px;font-weight:700;color:var(--stone);letter-spacing:0.05em;margin-bottom:5px;">Sign Up (Free)</div><p style="font-size:13px;line-height:1.65;color:rgba(215,215,210,0.5);">Create a free account to access the online ordering portal — any time, any device.</p></div>
+</div>
+
+<div style="display:flex;gap:20px;align-items:flex-start;">
+<div style="width:56px;height:56px;background:var(--deep-olive);border:1px solid rgba(138,148,109,0.25);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span style="font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--sand);">02</span></div>
+<div><div style="font-family:'Montserrat',sans-serif;font-size:13px;font-weight:700;color:var(--stone);letter-spacing:0.05em;margin-bottom:5px;">Design &amp; Quote</div><p style="font-size:13px;line-height:1.65;color:rgba(215,215,210,0.5);">Input cabinet types, dimensions, and materials. Get instant pricing in real-time — no spreadsheets, no waiting.</p></div>
+</div>
+
+<div style="display:flex;gap:20px;align-items:flex-start;">
+<div style="width:56px;height:56px;background:var(--deep-olive);border:1px solid rgba(138,148,109,0.25);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span style="font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--sand);">03</span></div>
+<div><div style="font-family:'Montserrat',sans-serif;font-size:13px;font-weight:700;color:var(--stone);letter-spacing:0.05em;margin-bottom:5px;">Confirm &amp; Pay</div><p style="font-size:13px;line-height:1.65;color:rgba(215,215,210,0.5);">Lock in your quote with a deposit and submit straight to manufacturing — no retyping, no errors.</p></div>
+</div>
+
+<div style="display:flex;gap:20px;align-items:flex-start;">
+<div style="width:56px;height:56px;background:var(--deep-olive);border:1px solid rgba(138,148,109,0.25);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span style="font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--sand);">04</span></div>
+<div><div style="font-family:'Montserrat',sans-serif;font-size:13px;font-weight:700;color:var(--stone);letter-spacing:0.05em;margin-bottom:5px;">Cut &amp; Build</div><p style="font-size:13px;line-height:1.65;color:rgba(215,215,210,0.5);">Our factory team cuts, machines, and assembles your order to spec.</p></div>
+</div>
+
+<div style="display:flex;gap:20px;align-items:flex-start;">
+<div style="width:56px;height:56px;background:var(--deep-olive);border:1px solid rgba(138,148,109,0.25);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span style="font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--sand);">05</span></div>
+<div><div style="font-family:'Montserrat',sans-serif;font-size:13px;font-weight:700;color:var(--stone);letter-spacing:0.05em;margin-bottom:5px;">QC, Dispatch &amp; Receive</div><p style="font-size:13px;line-height:1.65;color:rgba(215,215,210,0.5);">Every order passes quality control before shipping. Track progress all the way to your door.</p></div>
+</div>
+
+<div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:12px;">
+<a href="https://coopersupplyco.cabinetry.online/v2/register" style="background:var(--deep-olive);color:var(--sand);padding:14px 28px;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;text-decoration:none;border:1px solid var(--brass);display:inline-block;">Create Your FREE Account</a>
+<a href="https://coopersupplyco.cabinetry.online/v2/login" style="background:transparent;color:var(--stone);padding:14px 28px;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;text-decoration:none;border:1px solid rgba(215,215,210,0.25);display:inline-block;">Already a member? Log in</a>
+</div>
+
+</div>
+
+<div>
+<div style="position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;border:1px solid rgba(138,148,109,0.25);background:#111;">
+<iframe src="https://drive.google.com/file/d/1OTf3HQqWBcRN40KMSs_S-0ewOHvgd6Mq/preview" style="width:100%;height:100%;border:none;display:block;" allow="autoplay" allowfullscreen title="Cooper Supply Co. Client Portal Overview"></iframe>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="sub-brands" id="products" style="padding-top: 60px;">
+<div class="section-header fade-up">
+<div>
+<div class="section-label">Product Range</div>
+<h2 class="section-title">THREE<br>DIVISIONS.<br>ONE SUPPLY.</h2>
+</div>
+<p class="section-subtitle">Everything you need to build exceptional cabinetry — from the system to the panel to the hardware.</p>
+</div>
+
+<div class="brand-cards">
+<!-- CSC Systems -->
+<div class="brand-card fade-up">
+<div class="brand-card-num">01</div>
+<svg class="brand-card-icon" viewBox="0 0 48 48" fill="none">
+<rect x="4" y="8" width="40" height="32" rx="1" stroke="#8A946D" stroke-width="1.5"></rect>
+<line x1="4" y1="20" x2="44" y2="20" stroke="#8A946D" stroke-width="1.5"></line>
+<line x1="24" y1="20" x2="24" y2="40" stroke="#8A946D" stroke-width="1.5"></line>
+<circle cx="14" cy="14" r="2" fill="#8A946D"></circle>
+<circle cx="34" cy="14" r="2" fill="#8A946D"></circle>
+</svg>
+<div class="brand-card-name">CSC SYSTEMS</div>
+<div class="brand-card-sub">Cabinet Systems</div>
+<p class="brand-card-desc">Complete cabinet systems engineered for laundries, wardrobes, vanities and storage. Built for trade. Simple for DIY.</p>
+<ul class="brand-card-items">
+<li>Laundry Systems (CLS Series)</li>
+<li>Wardrobe Systems</li>
+<li>Vanity Systems</li>
+<li>Storage Solutions</li>
+</ul>
+</div>
+
+<!-- CSC Cut -->
+<div class="brand-card fade-up fade-up-delay-2">
+<div class="brand-card-num">02</div>
+<svg class="brand-card-icon" viewBox="0 0 48 48" fill="none">
+<path d="M8 8 L40 8 L40 40 L8 40 Z" stroke="#8A946D" stroke-width="1.5"></path>
+<path d="M16 8 L16 40" stroke="#8A946D" stroke-width="1" stroke-dasharray="3 3"></path>
+<path d="M32 8 L32 40" stroke="#8A946D" stroke-width="1" stroke-dasharray="3 3"></path>
+<path d="M8 20 L40 20" stroke="#8A946D" stroke-width="1" stroke-dasharray="3 3"></path>
+<path d="M8 32 L40 32" stroke="#8A946D" stroke-width="1" stroke-dasharray="3 3"></path>
+<circle cx="10" cy="6" r="3" stroke="#8A946D" stroke-width="1.5" fill="none"></circle>
+<line x1="12" y1="8" x2="16" y2="12" stroke="#8A946D" stroke-width="1.5"></line>
+</svg>
+<div class="brand-card-name">CSC CUT</div>
+<div class="brand-card-sub">Cut-to-Size Panels</div>
+<p class="brand-card-desc">Precision CNC cut panels, edging and machining services. Supply your own sheets or let us source the right material.</p>
+<ul class="brand-card-items">
+<li>Cut-to-Size Panels (Melamine, MDF)</li>
+<li>Edgebanding</li>
+<li>CNC Machining &amp; Drilling</li>
+<li>Full Nest + Labelling</li>
+</ul>
+</div>
+
+<!-- CSC Hardware -->
+<div class="brand-card fade-up fade-up-delay-3">
+<div class="brand-card-num">03</div>
+<svg class="brand-card-icon" viewBox="0 0 48 48" fill="none">
+<circle cx="24" cy="24" r="8" stroke="#8A946D" stroke-width="1.5"></circle>
+<circle cx="24" cy="24" r="3" fill="#8A946D"></circle>
+<line x1="24" y1="6" x2="24" y2="14" stroke="#8A946D" stroke-width="1.5"></line>
+<line x1="24" y1="34" x2="24" y2="42" stroke="#8A946D" stroke-width="1.5"></line>
+<line x1="6" y1="24" x2="14" y2="24" stroke="#8A946D" stroke-width="1.5"></line>
+<line x1="34" y1="24" x2="42" y2="24" stroke="#8A946D" stroke-width="1.5"></line>
+</svg>
+<div class="brand-card-name">CSC HARDWARE</div>
+<div class="brand-card-sub">Any Hardware</div>
+<p class="brand-card-desc">We source any hardware on the market at competitive trade rates — or supply your own and we'll drill for it.</p>
+<ul class="brand-card-items">
+<li>Hinges &amp; Lift Systems</li>
+<li>Drawer Runners &amp; Slides</li>
+<li>Handles &amp; Accessories</li>
+<li>Supply your own — we'll drill for it</li>
+</ul>
+</div>
+</div>
+</section><section class="contact" id="contact">
+<div>
+<div class="section-label" style="color:rgba(138,148,109,0.8)">Get in Touch</div>
+<h2 class="section-title">LET'S BUILD<br>SOMETHING.</h2>
+<p class="contact-body">Whether you're pricing a project, applying for a trade account, or just want to know what system works best for your job — get in touch.</p>
+
+<div class="contact-details">
+<div class="contact-detail">
+<div class="contact-detail-icon">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8A946D" stroke-width="1.5">
+<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle>
+</svg>
+</div>
+<div class="contact-detail-text">
+<strong>Location</strong>
+<span>Gold Coast, QLD, Australia</span>
+</div>
+</div>
+<div class="contact-detail">
+<div class="contact-detail-icon">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8A946D" stroke-width="1.5">
+<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.38 2 2 0 0 1 3.62 1.21l3-.02a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l1.07-1.07a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.72 16l-.8.92z"></path>
+</svg>
+</div>
+<div class="contact-detail-text">
+<strong>Phone</strong>
+<span>0478 248 212</span>
+</div>
+</div>
+<div class="contact-detail">
+<div class="contact-detail-icon">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8A946D" stroke-width="1.5">
+<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+<polyline points="22,6 12,13 2,6"></polyline>
+</svg>
+</div>
+<div class="contact-detail-text">
+<strong>Email</strong>
+<span>hello@coopersupplyco.com.au</span>
+</div>
+</div>
+</div>
+</div>
+
+<form class="contact-form fade-up" onsubmit="return false;">
+<div class="form-row">
+<div class="form-field">
+<label>First Name</label>
+<input type="text" placeholder="Luke">
+</div>
+<div class="form-field">
+<label>Last Name</label>
+<input type="text" placeholder="Cooper">
+</div>
+</div>
+<div class="form-field">
+<label>Email</label>
+<input type="email" placeholder="you@company.com.au">
+</div>
+<div class="form-field">
+<label>Enquiry Type</label>
+<select>
+<option>Trade Account Application</option>
+<option>Product Enquiry — CSC Systems</option>
+<option>Product Enquiry — CSC Cut</option>
+<option>Product Enquiry — CSC Hardware</option>
+<option>Operations Platform Access</option>
+<option>General Enquiry</option>
+</select>
+</div>
+<div class="form-field">
+<label>Message</label>
+<textarea placeholder="Tell us about your project…"></textarea>
+</div>
+<button type="submit" class="btn-primary" style="border:none; cursor:pointer; text-align:center;">Send Enquiry →</button>
+</form>
+</section>
+
+<!-- PLATFORMS -->
+
+<!-- SUB-BRANDS -->
+
+<!-- HOW IT WORKS -->
+
+<!-- 24/7 ORDER CTA -->
+
+<!-- OPERATIONS PLATFORM -->
+
+<!-- VALUES -->
+
+<!-- CONTACT -->
+
+<!-- FOOTER -->
+<footer>
+<div class="footer-top">
+<div class="footer-brand">
+<a class="logo-wrap" href="/">
+<svg class="logo-hex" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 202 178"><path fill="#4A4728" fill-rule="evenodd" d="M101,12L167,51L167,127L101,166L35,127L35,51ZM101,28L154,58L154,120L101,150L48,120L48,58Z"/><rect fill="#4A4728" x="75" y="56" width="52" height="13"/><rect fill="#4A4728" x="75" y="69" width="13" height="14"/><rect fill="#4A4728" x="75" y="83" width="52" height="13"/><rect fill="#4A4728" x="114" y="96" width="13" height="14"/><rect fill="#4A4728" x="75" y="110" width="52" height="13"/></svg>
+<div class="logo-text">
+<span>COOPER SUPPLY CO.</span>
+<span>Trade Quality. DIY Confidence.</span>
+</div>
+</a>
+<p>Trade quality cabinetry systems, cut-to-size panels and premium hardware. Built for builders. Simple for DIY.</p>
+</div>
+
+<div>
+<div class="footer-col-title">Platforms</div>
+<ul class="footer-links">
+<li><a href="#order">Order Online</a></li>
+
+</ul>
+</div>
+
+<div>
+<div class="footer-col-title">Products</div>
+<ul class="footer-links">
+<li><a href="#products">CSC Systems</a></li>
+<li><a href="#products">CSC Cut</a></li>
+<li><a href="#products">CSC Hardware</a></li>
+</ul>
+</div>
+
+<div>
+<div class="footer-col-title">Company</div>
+<ul class="footer-links">
+<li><a href="#how-it-works">How It Works</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="#contact">Trade Accounts</a></li>
+</ul>
+</div>
+</div>
+
+<div class="footer-bottom">
+<p class="footer-copy">© 2026 Cooper Supply Co. Pty Ltd — Gold Coast, QLD</p>
+<div class="footer-legal">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Trade</a>
+</div>
+</div>
+</footer>
+
+<script>
+// Fade-up on scroll
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(e => {
+
+[output truncated at 50000 of 50333 characters. Pass a larger max_chars (default 50000) to see more, or use read_page with a ref_id to focus on a smaller section.]
       --sand:        #F2F2EC;
       --brass:       #8A946D;
       --white:       #FFFFFF;
